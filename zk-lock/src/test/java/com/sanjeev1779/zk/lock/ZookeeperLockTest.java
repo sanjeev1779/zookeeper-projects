@@ -10,14 +10,14 @@ public class ZookeeperLockTest {
     public void testZookeeperLock() {
         IDistributedLock distributedLock = new ZookeeperLock("localhost:2181");
         String lockId = UUID.randomUUID().toString();
-        System.out.println(lockId);
-        distributedLock.getLock(lockId);
 
         try {
+            distributedLock.getLock(lockId);
             Thread.sleep(2000);
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } finally {
+            distributedLock.releaseLock(lockId);
         }
-//        distributedLock.releaseLock(lockId);
     }
 }
