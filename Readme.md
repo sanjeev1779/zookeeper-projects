@@ -1,3 +1,5 @@
+<a href="https://www.codefactor.io/repository/github/sanjeev1779/zookeeper-projects"><img src="https://www.codefactor.io/repository/github/sanjeev1779/zookeeper-projects/badge" alt="CodeFactor" /></a>
+
 Sample projects for zookeeper.
 It's a multi-module application.
 Each module can be run independently.
